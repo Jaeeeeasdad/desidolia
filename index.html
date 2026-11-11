@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy 18th Birthday, Crystal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,800;1,9..144,500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="inner">
+    <div class="hb">Happy Birthday,</div>
+    <h1 data-name>Crystal</h1>
+    <span class="eighteen" aria-label="eighteen">18</span>
+    <p>Today you step into your debut. Welcome to the next chapter.</p>
+    <a class="btn" href="#message">Read your message</a>
+  </div>
+</header>
+
+<section id="message">
+  <div class="wrap">
+    <h2>A birthday message for you</h2>
+    <div class="letter">
+      <p>Happy birthday, <span data-name>Crystal</span>! Another year has gone by, and you’ve filled it with laughter, growth, and a kind of light that makes people around you feel at home.</p>
+      <p>May this day be full of cake, music, and the people who love you most. May every wish you make this year come true, and may the year ahead be gentler, braver, and brighter than the last.</p>
+      <p class="sign">With all our love</p>
+    </div>
+  </div>
+</section>
+
+<section class="debut" id="debut">
+  <div class="wrap">
+    <h2>Your 18th: a debut worth celebrating</h2>
+    <p>Eighteen years of you. Eighteen years of firsts, mistakes, victories, and small moments that shaped who you are today. Tonight is your debut, and the world is lucky to meet the person you’ve become.</p>
+    <p>Walk into adulthood with your head high and your heart open. Dream big, stay kind, and remember that you will always have people cheering for you.</p>
+    <div class="candles" id="candles" role="group" aria-label="Eighteen candles"></div>
+    <p class="count" id="count" aria-live="polite">Tap each candle to light it. 0 of 18 lit.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="display">Here’s to eighteen, and to everything ahead.</div>
+</footer>
+
+<div class="player">
+  <button class="play" id="play" aria-label="Play song" disabled>▶</button>
+  <div class="track"><b id="trackName">No song attached yet</b><small id="trackHint">Attach a song to play it here</small></div>
+  <button class="attach" id="attach" type="button">Attach song</button>
+  <input type="file" id="file" accept="audio/*" hidden>
+</div>
+<audio id="audio" loop preload="auto"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
