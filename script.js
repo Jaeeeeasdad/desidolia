@@ -1,8 +1,8 @@
 /* ====== EDIT THESE ====== */
 const CONFIG = {
   name: "Crystal",     // the celebrant's name
-  song: "./Happy%20birthday%20-%20%40amircarlosagassi%20%40sarinaagassi%20official%20music%20video.mp3",
-  songTitle: "Yellow - Coldplay"
+  song: "./Coldplay%20-%20Yellow%20(Official%20Video).mp3",
+  songTitle: "Coldplay - Yellow (Official Video)"
 };
 /* ======================== */
 
