@@ -1,8 +1,8 @@
 /* ====== EDIT THESE ====== */
 const CONFIG = {
   name: "Crystal",     // the celebrant's name
-  song: "",            // optional: a direct audio URL or data: URI to load automatically
-  songTitle: ""        // optional title shown in the player
+  song: "./Happy%20birthday%20-%20%40amircarlosagassi%20%40sarinaagassi%20official%20music%20video.mp3",
+  songTitle: "Happy Birthday"
 };
 /* ======================== */
 
@@ -70,4 +70,10 @@ audio.addEventListener("play", () => { playBtn.textContent = "❚❚"; playBtn.s
 audio.addEventListener("pause", () => { playBtn.textContent = "▶"; playBtn.setAttribute("aria-label", "Play song"); hintEl.textContent = "Paused"; });
 audio.addEventListener("error", () => { if (audio.src) hintEl.textContent = "Couldn’t load this song. Try an MP3."; });
 
-if (CONFIG.song) setSong(CONFIG.song, CONFIG.songTitle);
+if (CONFIG.song) {
+  setSong(CONFIG.song, CONFIG.songTitle);
+  audio.autoplay = true;
+  audio.play().catch(() => {
+    hintEl.textContent = "Autoplay was blocked by your browser. Tap play to start.";
+  });
+}
