@@ -2,7 +2,7 @@
 const CONFIG = {
   name: "Crystal",     // the celebrant's name
   song: "./Happy%20birthday%20-%20%40amircarlosagassi%20%40sarinaagassi%20official%20music%20video.mp3",
-  songTitle: "Happy Birthday"
+  songTitle: "Happy birthday - @amircarlosagassi @sarinaagassi official music video"
 };
 /* ======================== */
 
